@@ -21,7 +21,7 @@ html {
 
 .container{
     width: 90vw;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 40px auto;
 }
 
@@ -146,13 +146,17 @@ header.primary nav a:active{
 /*----------------Content----------------*/
 section#content{
     padding: 2em 0;
+    color: #303B40;
 }
 
 section#content h2{
+    font-family: "Kanit", sans-serif;
     color: #303B40;
 }
 
 section#content h3{
+    font-family: "Kanit", sans-serif;
+    color: #878B8C;
 }
 
 section#content table{
@@ -256,7 +260,7 @@ section#articles h2{
     border-radius: 10px;
     position: relative;
     left: auto;
-    width: 40%;
+    width: 60%;
    
 }
 
@@ -269,12 +273,68 @@ section#articles h2{
     font-size: 1.2em;
 }
 
+/*----------------Hero----------------*/
+#hero{
+    padding: 4em 0;
+}
 
+/*----------------Aside----------------*/
 
+aside[role="complementary"]{
+    background-color: #303B40;
+    color: #F2F2F2;
+    padding: 2.5em;
+}
 
+aside .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+}
 
+aside article.widget{
+    flex: 1;
+}
 
+.widget.overview table{
+    font-size:0.8em;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+.widget.overview table td{
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+}
+
+.widget.overview table td:nth-child(even){
+    text-align: right;
+}
+
+aside article footer{
+    display: none;
+}
+
+/* ---------------Footer----------------- */
+
+footer#colophon{
+    background-color: #BDE3F2;
+}
+
+#colophon h6{
+    padding: 20px;
+    margin: 0;
+    color: #303B40;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+#colophon h6 a:link,
+#colophon h6 a:visited{
+    color: #303B40;
+}
 
 /* ---------------Media Queries----------------- */
 
@@ -310,4 +370,5 @@ section#articles h2{
     
     aside .container {
     flex-direction: column;
-  }
+    }
+}
