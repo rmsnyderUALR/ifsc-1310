@@ -74,7 +74,7 @@ header.primary{
 
 header.primary::before{
     content: "";
-    background-image: url("street.jpg");
+    background-image: url("../img/street.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -93,7 +93,7 @@ header.primary h1{
 
 header.primary h1 a{
     color: #fff;
-    background-image: url("logo-transparent.png");
+    background-image: url("../img/logo-transparent.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: block;
