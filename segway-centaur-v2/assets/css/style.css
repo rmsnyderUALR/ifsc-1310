@@ -4,6 +4,7 @@
 #BDE3F2 (Lighter blue)
 #878B8C (Light gray)
 #F2F2F2 (White)
+#33536B (Dark blue)
 */
 
 /*  ---------------Box Sizing-----------------  */
@@ -22,7 +23,7 @@ html {
 .container{
     width: 90vw;
     max-width: 1000px;
-    margin: 40px auto;
+    margin: auto auto;
 }
 
 .img-right{
@@ -159,30 +160,6 @@ section#content h3{
     color: #878B8C;
 }
 
-section#content table{
-
-}
-
-section#content caption{
-
-}
-
-section#content th{
-
-}
-
-section#content td{
-
-}
-
-section#content tr:nth-child(even){
-
-}
-
-section#content tr:hover{
-
-}
-
 /*----------------Articles----------------*/
 section#articles{
     background: #303B40;
@@ -195,7 +172,6 @@ section#articles .container{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border-bottom: 1px solid #c0c0c0;
     padding: 0 0 4em 0;
     position: relative;
 }
@@ -274,10 +250,30 @@ section#articles h2{
 }
 
 /*----------------Hero----------------*/
+section#hero{
+    background-color: #33536B;
+}
 #hero{
     padding: 4em 0;
+    border: 0;
+}
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: white;
 }
 
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
 /*----------------Aside----------------*/
 
 aside[role="complementary"]{
